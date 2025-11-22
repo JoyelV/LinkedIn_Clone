@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>LinkedIn Clone</title>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="navbar-left">
+            <a href="index.html" class="logo"><img src="images/logo.png"></a>
+            <div class="search-box">
+                <img src="images/search.png">
+                <input type="text" placeholder="Search">
+            </div>
+        </div>
+        <div class="navbar-center">
+            <ul>
+                <li><a href="index.html" class="active-link"><img src="images/home.png"><span>Home</span></a></li>
+                <li><a href="#"><img src="images/home.png"><span>My Network</span></a></li>
+                <li><a href="#"><img src="images/jobs.png"><span>Jobs</span></a></li>
+                <li><a href="#"><img src="images/message.png"><span>Messaging</span></a></li>
+                <li><a href="#"><img src="images/notification.png"><span>Notifications</span></a></li>
+            </ul>
+        </div>
+        <div class="navbar-right">
+            <div class="online">
+                <img src="images/user-1.png" class="nav-profile-img" onclick="toggleMenu()">
+            </div>
+        </div>
+        <!---Profile dropdown menu-->
+        <div class="profile-menu-wrap" id="profileMenu">
+            <div class="profile-menu">
+                <div class="user-info">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h3>Rayan Walton</h3>
+                        <a href="profile.html">See your profile</a>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/feedback.png" alt="">
+                    <p>Give Feedback</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/setting.png" alt="">
+                    <p>Settings & Privacy</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/help.png" alt="">
+                    <p>Help & Support</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/display.png" alt="">
+                    <p>Display & Accessiblity</p>
+                    <span>></span>
+                </a>
+                <a href="#" class="profile-menu-link">
+                    <img src="images/logout.png" alt="">
+                    <p>Logout</p>
+                    <span>></span>
+                </a>
+            </div>
+        </div>
+    </nav>
+    <!-------------Navbar end ----------------->
+
+    <div class="container">
+        <div class="profile-main">
+            <div class="profile-container">
+                <a href="profile.html"><img src="images/cover-pic.png" width="100%"></a>
+                 <div class="profile-container-inner">
+                    <a href="profile.html"><img src="images/user-1.png" alt="" class="profile-pic"></a>
+                    <h1>Rayan Walton</h1>
+                    <b>Web Developer at Authority Enterpreneurs | Former Freelance web developer</b>
+                    <p>Kochi, Kerala, India &middot; <a href="#">Contact Info</a></p>
+                    <div class="mutual-connection">
+                        <img src="images/user-2.png" alt="">
+                        <span>1 mutual connection: Orlando Giggs</span>
+                    </div>
+                    <div class="profile-btn">
+                        <a href="#" class="primary-btn"><img src="images/connect.png" alt=""> Connect to</a>
+                        <a href="#">Message</a>
+                        <a href="#" class="resource-btn">More</a>
+                    </div>
+                 </div>
+            </div>
+            <div class="profile-description">
+                <h2>About</h2>
+                <p>I’m a Frontend Developer with hands-on experience building responsive and scalable web applications using React.js, TailwindCSS, and the MERN Stack. I’ve worked on real-world projects that focus on delivering intuitive UI, efficient performance, and modern user experiences.</p>
+                <a href="#" class="see-more-link">See More</a>
+            </div>
+             <div class="profile-description">
+                <h2>Experience</h2>
+                <div class="profile-desc-row">
+                    <img src="images/microsoft.png" alt="">
+                    <div>
+                        <h3>Lead Front-end Engineer</h3>
+                        <b>Microsoft &middot; Full-time</b>
+                        <b>Feb 2025 - Present &middot; 1.5 Years</b>
+                        <p>I focused on building high-performance UI components and improving overall usability. I led the implementation of responsive layouts using HTML, CSS (Flexbox, Grid), and Tailwind/Bootstrap. I collaborated with the QA team to resolve UI inconsistencies, improved accessibility (ARIA roles, semantic tags), and enhanced animations and transitions for a polished look. I also participated in code reviews and followed best practices for clean, maintainable code.</p>
+                        <hr>
+                    </div>
+                </div>
+                 <div class="profile-desc-row">
+                    <img src="images/slack.png" alt="">
+                    <div>
+                        <h3>Full stack developer</h3>
+                        <b>Slack &middot; Full-time</b>
+                        <b>Jun 2018 - Apr 2025 &middot; 7 Years</b>
+                        <p>I contributed as a Full-Stack Developer in the MERN stack, developing both client-side features and server-side APIs. I built secure RESTful APIs using Node.js and Express, integrated MongoDB with efficient queries, and implemented authentication using JWT. On the frontend, I created dashboards, forms, and interactive components in React. I worked with deployment pipelines (Git, Render/Vercel) and ensured smooth integration between frontend and backend services.</p>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/google.png" alt="">
+                    <div>
+                        <h3>Web developer</h3>
+                        <b>Google &middot; Full-time</b>
+                        <b>Sep 2015 - March 2018 &middot; 3 Years</b>
+                        <p>I worked as a Frontend Developer responsible for building responsive, user-friendly interfaces using React, JavaScript, and modern UI frameworks. I collaborated closely with designers to convert Figma designs into reusable components, optimized application performance, and implemented state management using Redux and Context API. I also improved page load time, fixed UI bugs, and ensured cross-browser compatibility to deliver a seamless user experience.</p>
+                    </div>
+                </div>
+                <hr>
+                <a href="#" class="experience-link">Show all 7 Experiences <img src="images/right-arrow.png" alt=""></a>
+            </div>
+            <div class="profile-desc-row">
+                    <img src="images/north.png" alt="">
+                    <div>
+                        <h3>Northern University</h3>
+                        <p>Computer Science</p>
+                        <b>2015-2018</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/mit.png" alt="">
+                    <div>
+                        <h3>Havard University</h3>
+                        <p>Computer Science</p>
+                        <b>2015-2018</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desc-row">
+                    <img src="images/stanford.png" alt="">
+                    <div>
+                        <h3>Stanford University</h3>
+                        <p>Computer Science</p>
+                        <b>2010-2015</b>
+                        <hr>
+                    </div>
+                </div>
+                <div class="profile-desx-row">
+                    <h2>Skills</h2>
+                    <a href="#" class="skills-btn">Web Development</a>
+                    <a href="#" class="skills-btn">Leadership skils</a>
+                    <a href="#" class="skills-btn">HTML & CSS</a>
+                    <a href="#" class="skills-btn">JavaScript</a>
+                    <a href="#" class="skills-btn">Communication</a>
+                    <a href="#" class="skills-btn">UI UX</a>
+                    <a href="#" class="skills-btn">Planning</a>
+                    <a href="#" class="skills-btn">Coding</a>
+                    <a href="#" class="skills-btn">Python</a>
+                    <a href="#" class="skills-btn">FIGMA Design</a>
+                </div>
+                <div class="profile-desx-row">
+                    <h2>Languages</h2>
+                    <a href="#" class="language-btn">English</a>
+                    <a href="#" class="language-btn">Germany</a>
+                </div>
+        </div>
+        <!------profile-sidebar----------->
+        <div class="profile-sidebar">
+            <div class="sidebar-ad">
+                <small>Ad &middot; &middot; &middot;</small>
+                <p>Master the 5 Principles of web design</p> 
+                <div>
+                    <img src="images/user-1.png">
+                    <img src="images/mi-logo.png">
+                </div>
+                <b>Brand and Demand in Xiaomi</b>
+                <a href="#" class="ad-link">Learn More</a>
+            </div>
+            <div class="sidebar-people">
+                <h3>People you may know</h3>
+                <div class="sidebar-people-row">
+                    <img src="images/user-3.png" alt="">
+                    <div>
+                        <h2>Samuel Grey</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-4.png" alt="">
+                    <div>
+                        <h2>Benjamin Tony</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-1.png" alt="">
+                    <div>
+                        <h2>Martin Lewis</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+                <div class="sidebar-people-row">
+                    <img src="images/user-2.png" alt="">
+                    <div>
+                        <h2>Clarence George</h2>
+                        <p>Head of Marketing at Alibaba</p>
+                        <a href="#">Connect</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="profile-footer">
+        <div class="sidebar-useful-links">
+                <a href="#">About</a>
+                <a href="#">Accessiblity</a>
+                <a href="#">Help Center</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Advertising</a>
+                <a href="#">Get the App</a>
+                <a href="#">More</a>
+                <div class="copyright-msg">
+                    <img src="images/logo.png">
+                    <p>Linkedin &#169; 2022. All rights reserved</p>
+                </div>
+            </div>
+    </div>
+
+    <script>
+
+        let profileMenu = document.getElementById("profileMenu");
+
+        function toggleMenu(){
+            profileMenu.classList.toggle("open-menu");
+        }
+
+    </script>
+</body>
+</html>
