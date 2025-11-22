@@ -3,7 +3,7 @@
 A fully responsive **LinkedIn UI clone** built using pure **HTML, CSS, and vanilla JavaScript**. This project replicates the core layout and interactive features of LinkedIn's homepage and user profile page — perfect for portfolios, learning, or as a foundation for a full-stack social network.
 
 ## Live Demo
-[Click here to view the live project](#) 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Vercel-black?style=for-the-badge&logo=vercel)](https://linkedin-clone-two-sigma.vercel.app/)
 
 ## Screenshots
 
